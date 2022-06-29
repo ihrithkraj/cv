@@ -1,0 +1,249 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	
+	
+}
+
+body{
+	font-size: 20px;
+	overflow-x: hidden;
+	font-family: 'Abril Fatface', cursive;
+}
+
+
+header{
+	background-image: url('../images/newbig.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+}
+
+.clearfix:after{
+	content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0px;
+      clear: both;
+}
+
+
+
+.row{
+	max-width: 1180px;
+	margin: 0 auto;
+
+}
+
+.logo{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-top: 20px;
+}
+
+.main-nav{
+	float: right;
+	margin-top: 20px;
+
+}
+
+.main-nav li{
+	display: inline-block;
+	list-style: none;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+
+.main-nav li a{
+	padding: 5px 0;
+	color: #1B2430;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:90% ;
+	font-weight: bold;
+}
+
+.main-nav li a:hover{
+	 border-bottom: 2px solid floralwhite;
+}
+
+
+
+
+.main-content-header{
+	width: 1180px;
+	position: absolute;
+
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%); 
+}
+
+h1{
+	color: #1B2430;
+	font-size: 300%;
+	word-spacing: 3px;
+	
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.btn{
+	display: inline-block;
+	padding: 10px 30px;
+	font-weight: bold;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-radius: 200px;
+	transition: background-color 0.2s , border 0.2s,color 0.2s;
+}
+
+
+
+.btn-full{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 12px;
+	border: 2px solid #bf55ec;
+}
+
+.btn-full:hover{
+      background-color:floralwhite ;
+}
+
+
+
+.btn-nav{
+	background-color: transparent;
+	color: #F47C7C;
+	
+	border: 2px solid #F47C7C;
+}
+
+.btn-nav:hover{
+    background-color: floralwhite;
+}
+
+.colour{
+	animation: colorchange 2s infinite;
+}
+.mobile-icon{
+	display: none;
+}
+@keyframes colorchange{
+	0%{color: black; }
+	25%{color: darkblue ;}
+	50%{color: darkgreen;}
+	100%{color: darkred;}
+}
+
+
+/*
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+*/
+
+@media only screen and (max-width: 1180px){
+ .main-content-header{
+ 	width: 100%;
+ 	padding: 0px 2%;
+ }
+}
+
+@media only screen and (max-width: 998px){
+   h1{
+   	font-size: 200%;
+   }
+
+
+}
+
+@media only screen and (max-width: 798px){
+
+	.logo{
+    	height: 100px;
+    	width: auto;
+    }
+
+	h1{
+   	font-size: 170%;
+   }
+
+   .main-nav{
+   	display: none;
+   }
+   
+   .logo{
+   	font-size: 50%;
+   	margin-left: 20px;
+   }
+
+
+   .mobile-icon{
+   	display: inline-block;
+   	float: right;
+   	color: black;
+   	margin-top: 30px;
+   	margin-right: 20px;
+   }
+
+   .main-nav{
+   	float: left;
+   }
+
+   .btn-null{
+		display: block;
+
+	}
+
+   .main-nav li{
+   	
+   	display: block;
+   	margin-top: 10px;
+   }
+
+
+
+}
+
+@media only screen and (max-width: 480px){
+    .logo{
+    	height: 90px;
+    	width: auto;
+    }
+    
+    .main-nav li{
+    	margin-left: 40px;
+	margin-top: 15px;
+
+    }
+
+
+	.btn-null{
+		display: block;
+
+	}
+
+	h1{
+		font-size: 140%;
+	}
+}
+
+
+
