@@ -241,7 +241,7 @@ if (selected =='Parkinsons Prediction'):
         
     
     
-    # code for Prediction
+ # code for Prediction
     parkinsons_diagnosis = ''
     
     # creating a button for Prediction    
